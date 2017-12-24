@@ -14,7 +14,7 @@ class Product extends Model
         'description',
         'quantity',
         'status',
-        'image',
+        'img',
         'seller_id'
     ];
 
@@ -23,7 +23,7 @@ class Product extends Model
         return $this->status == Product::PRODUCTO_DISPONIBLE;
     }
 
-    public function category()
+    public function categories()
     {
         return $this->belongsToMany(Category::class);
     }

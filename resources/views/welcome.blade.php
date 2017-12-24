@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laraveles
+                    API
                 </div>
 
                 <div class="links">
