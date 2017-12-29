@@ -32,6 +32,29 @@ class User extends Authenticatable
     ];
 
     /**
+     * @param $valor
+     */
+    public function setNameAttribute($valor)
+    {
+        $this->attributes['name'] = strtolower($valor);
+    }
+
+    /**
+     * @param $valor
+     */
+    public function setEmailAttribute($valor)
+    {
+        $this->attributes['email'] = strtolower($valor);
+    }
+
+    public function getNameAttribute($valor)
+    {
+        return ucwords($valor);
+    }
+
+
+
+    /**
      * The attributes that should be hidden for arrays.
      *
      * @var array
